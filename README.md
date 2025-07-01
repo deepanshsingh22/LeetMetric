@@ -10,7 +10,9 @@ LeetMetric is a lightweight web app that lets you check a LeetCode user's proble
 - 💡 Clean and responsive UI with HTML, CSS, and JavaScript
 
 ## 📸 Preview
-<img width="935" alt="image" src="https://github.com/user-attachments/assets/aaad181f-d37c-40ea-a456-04cedb75be9d" />
+<h3>Script1 Screenshot</h3>
+<img src="./script1_image/preview.png" alt="LeetMetric Screenshot" width="600"/>
+
 
 ## 🛠 Tech Stack
 
