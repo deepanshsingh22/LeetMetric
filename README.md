@@ -6,7 +6,7 @@ LeetMetric is a lightweight web app that lets you check a LeetCode user's proble
 
 - 📊 Visual progress circles for Easy / Medium / Hard problems
 - 🧑 User input to search for any LeetCode username
-- ⚡ Real-time data fetched from [LeetCode Stats API](https://leetcode-stats-api.herokuapp.com/)
+- ⚡ Real-time data fetched from [LeetCode Stats API](https://leetcode-stats-api.herokuapp.com/) (https://leetcode-stats-api.herokuapp.com/${username})
 - 💡 Clean and responsive UI with HTML, CSS, and JavaScript
 
 ## 📸 Preview
