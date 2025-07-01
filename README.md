@@ -1,13 +1,14 @@
 # LeetMetric
 
 LeetMetric is a lightweight web app that lets you check a LeetCode user's problem-solving stats—broken down by Easy, Medium, and Hard difficulty levels.
-
 ## 🔍 Features
 
-- 📊 Visual progress circles for Easy / Medium / Hard problems
-- 🧑 User input to search for any LeetCode username
-- ⚡ Real-time data fetched from [LeetCode Stats API](https://leetcode-stats-api.herokuapp.com/) 
-- 💡 Clean and responsive UI with HTML, CSS, and JavaScript
+- 📊 Circular progress indicators for problem-solving status by difficulty
+- 🔍 Search any valid LeetCode username
+- 📈 Stats displayed using live data from the LeetCode GraphQL API
+- - ⚡ Real-time data fetched from [LeetCode Stats API](https://leetcode-stats-api.herokuapp.com/)  (via `script.js`)
+- 🌐 CORS-compliant version using a proxy (via `script2.js`)
+- ⚡ Fast, responsive, and easy to use
 
 ## 📸 Preview
 <h3>Script1 Screenshot</h3>
@@ -16,14 +17,13 @@ LeetMetric is a lightweight web app that lets you check a LeetCode user's proble
 <h3>Script2 Screenshot</h3>
 <img src="screenshots/script2_image.png" alt="LeetMetric Screenshot" width="600"/>
 
-
 ## 🛠 Tech Stack
 
 - HTML5
 - CSS3
 - JavaScript (Vanilla)
 - LeetCode Stats API
-
+- LeetCode GraphQL API
 ## 📂 Project Structure
 
 ```bash
@@ -31,3 +31,5 @@ LeetMetric is a lightweight web app that lets you check a LeetCode user's proble
 ├── style.css          # Stylesheet
 ├── script.js          # JavaScript to handle logic and API calls
 └── README.md          # Project overview
+
+## 📂 File Overview
