@@ -25,11 +25,12 @@ LeetMetric is a lightweight web app that lets you check a LeetCode user's proble
 - LeetCode Stats API
 - LeetCode GraphQL API
 ## 📂 Project Structure
-
 ```bash
-├── index.html         # Main HTML file
-├── style.css          # Stylesheet
-├── script.js          # JavaScript to handle logic and API calls
-└── README.md          # Project overview
+├── index.html # Main page
+├── style.css # Styling for layout and progress visuals
+├── script.js # Uses a public REST-like API to fetch stats
+├── script2.js # Uses GraphQL with proxy for advanced stats
+├── README.md # This file
 
-## 📂 File Overview
+
+
