@@ -13,8 +13,7 @@ LeetMetric is a lightweight web app that lets you check a LeetCode user's proble
 <h3>Script1 Screenshot</h3>
 <img src="screenshots/scrpit1_image.png" alt="LeetMetric Screenshot" width="600"/>
 <br>
-<br>
-<h3>Script1 Screenshot</h3>
+<h3>Script2 Screenshot</h3>
 <img src="screenshots/script2_image.png" alt="LeetMetric Screenshot" width="600"/>
 
 
