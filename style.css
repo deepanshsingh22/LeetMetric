@@ -23,12 +23,13 @@ body {
     border-radius: 5px;
     width: 50%;
     max-width: 600px;
-    align-items: centre;
+    align-items: center; /* Center-align everything inside the container */
 }
 
 h1 {
     font-size: 2rem;
-    text-align: centre;
+    text-align: center; /* Center-align the heading */
+    margin-bottom: 1rem; /* Optional: Space below the heading */
 }
 
 .user-container {
