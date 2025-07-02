@@ -3,7 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LeetMetric</title>
+    <title>LeetMetric - LeetCode User Stats Dashboard</title>
+
+    <!-- Meta Description for search engine results -->
+    <meta name="description" content="LeetMetric is a lightweight web app that lets you check your LeetCode problem-solving stats, broken down by Easy, Medium, and Hard difficulty levels.">
+
+    <!-- Keywords relevant to your site (search engines use this) -->
+    <meta name="keywords" content="LeetMetric, LeetCode, problem-solving stats, programming, coding, dashboard, easy, medium, hard, real-time data">
+
+    <!-- Author of the website -->
+    <meta name="author" content="Deepansh Singh">
+
+    <!-- Open Graph Tags for social media sharing -->
+    <meta property="og:title" content="LeetMetric - LeetCode User Stats Dashboard">
+    <meta property="og:description" content="Track your LeetCode problem-solving stats across difficulty levels with LeetMetric. Real-time data from LeetCode API.">
+    <meta property="og:image" content="URL_to_image_for_social_media_preview"> <!-- Optional: Image for social media previews -->
+    <meta property="og:url" content="https://your-site-url.com">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags for better preview on Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="LeetMetric - LeetCode User Stats Dashboard">
+    <meta name="twitter:description" content="Track your LeetCode problem-solving stats with LeetMetric. Real-time data from the LeetCode API.">
+    <meta name="twitter:image" content="URL_to_image_for_twitter_preview"> <!-- Optional: Image for Twitter preview -->
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,10 +37,17 @@
         stats -->
         <h1>LeetMetric</h1>
 
+        <!-- Note about CORS access -->
+        <div class="cors-info">
+            <p><strong>Important:</strong> Before using the demo, please request temporary access to the CORS proxy:</p>
+            <a href="https://cors-anywhere.herokuapp.com/corsdemo" target="_blank" class="cors-link">Request CORS Access</a>
+            <p>Click the "Request temporary access" button on the page to continue.</p>
+        </div>
+
         <div class="user-container">
-            <p>Enter your username below:</p>
+            <p>Enter your username below:</p>     
             <div class="user-input-container">
-                <input type="text" placeholder="enter your username here" id="user-input">
+                <input type="text" placeholder="Enter your username here" id="user-input">
                 <button id="search-btn">Search</button>
             </div>
         </div>
@@ -33,14 +63,14 @@
                     </div>
                 </div>
 
-                <div class="progress-item ">
+                <div class="progress-item">
                     <div class="medium-progress circle">
                         <span id="medium-label"></span>
                         <p>Medium</p>
                     </div>
                 </div>
 
-                <div class="progress-item ">
+                <div class="progress-item">
                     <div class="hard-progress circle">
                         <span id="hard-label"></span>
                         <p>Hard</p>
@@ -50,14 +80,14 @@
             </div>
 
             <div class="stats-cards">
-                <!-- directly populate card here from the JS code -->
+                <!-- Cards populated dynamically from the JS -->
             </div>
 
         </div>
 
     </div>
 
-<!--     <script src="script.js"></script> -->
+    <!-- <script src="script.js"></script> -->
     <script src="script2.js"></script>
 </body>
 </html>
