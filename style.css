@@ -12,7 +12,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px; /* Added padding for mobile screens */
 }
 
 .container {
@@ -22,15 +21,12 @@ body {
     background-color: rgb(69, 64, 64);
     padding: 20px;
     border-radius: 5px;
-    width: 50%; 
+    width: 50%;
     max-width: 600px;
-    min-height: 60vh; /* Ensure enough height for smaller screens */
 }
 
 h1 {
     font-size: 2rem;
-    text-align: center;
-    margin-bottom: 1rem; /* Added space below the heading */
 }
 
 .user-container {
@@ -57,23 +53,6 @@ h1 {
     border-radius: 5px;
 }
 
-/* New style for CORS Info Section */
-.cors-info {
-    background-color: rgb(240, 100, 100); /* Red background */
-    padding: 10px;
-    border-radius: 5px;
-    margin-bottom: 20px; /* Space between CORS info and input area */
-    font-size: 1rem;
-    text-align: center;
-}
-
-.cors-link {
-    color: #fff;
-    font-weight: bold;
-    text-decoration: underline;
-    cursor: pointer;
-}
-
 .circle {
     width: 120px;
     height: 120px;
@@ -83,7 +62,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1rem;
+    font-size: 1 rem;
     color: white;
     font-weight: 700;
     background: conic-gradient(#299f5d var(--progress-degree, 0%), #283a2e 0%);
@@ -126,74 +105,90 @@ h4 {
     min-height: 4rem;
 }
 
-/* Media Queries for Responsiveness */
+/* CORS Info Section */
+.cors-info {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.cors-info a {
+    color: #4caf50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cors-info a:hover {
+    text-decoration: underline;
+}
+
+.cors-info p {
+    margin: 5px 0;
+}
+
+/* Responsive Styles */
 @media (max-width: 768px) {
     .container {
         width: 80%; /* Take up more width on smaller screens */
-        padding: 15px;
+        padding: 15px; /* Less padding on small screens */
     }
 
     h1 {
-        font-size: 1.5rem;
+        font-size: 1.5rem; /* Smaller header text */
     }
 
     .circle {
         width: 100px;
-        height: 100px;
+        height: 100px; /* Smaller circle */
         font-size: 0.9rem;
     }
 
     .user-input-container {
-        flex-direction: column;
+        flex-direction: column; /* Stack input and button vertically */
         gap: 10px;
     }
 
     #user-input {
-        width: 100%;
+        width: 100%; /* Full width input */
     }
 
     .stats-cards {
         flex-direction: column;
         gap: 15px;
-        justify-content: center;
+        justify-content: center; /* Center align cards */
     }
 
     .card {
-        width: 80%;
-        max-width: none;
+        width: 80%; /* Cards take more width on smaller screens */
+        max-width: none; /* Remove max-width to allow for flexibility */
     }
 
     .progress {
-        flex-direction: column;
+        flex-direction: column; /* Stack progress indicators vertically */
         gap: 20px;
-    }
-
-    .cors-info {
-        font-size: 0.9rem; /* Smaller font for CORS info on smaller screens */
     }
 }
 
 @media (max-width: 480px) {
     .container {
-        width: 90%;
+        width: 90%; /* Even more width for very small screens */
     }
 
     h1 {
-        font-size: 1.2rem;
+        font-size: 1.2rem; /* Further reduce font size */
     }
 
     .circle {
         width: 80px;
-        height: 80px;
+        height: 80px; /* Even smaller circle */
         font-size: 0.8rem;
     }
 
     .card {
-        width: 100%;
-    }
-
-    .cors-info {
-        font-size: 0.8rem; /* Even smaller font for very small screens */
-        padding: 8px; /* Less padding on very small screens */
+        width: 100%; /* Cards take full width on very small screens */
     }
 }
