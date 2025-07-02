@@ -9,6 +9,15 @@ LeetMetric is a lightweight web app that lets you check a LeetCode user's proble
 - ⚡ Real-time data fetched from [LeetCode Stats API](https://leetcode-stats-api.herokuapp.com/)  (via `script.js`)
 - 🌐 CORS-compliant version using a proxy (via `script2.js`)
 - ⚡ Fast, responsive, and easy to use
+## 🌐 Live Demo
+
+Check out the live app here:  
+👉 [LeetMetric on Vercel](https://leet-metric-wine.vercel.app/)
+
+> ⚠️ **Important**:  
+> Before using the live demo, please request temporary access to the CORS proxy:  
+> [https://cors-anywhere.herokuapp.com/corsdemo](https://cors-anywhere.herokuapp.com/corsdemo)  
+> Just click the "Request temporary access" button on that page. This step is required for the app to fetch data via the CORS proxy in `script2.js`.
 
 ## 📸 Preview
 <h3>Script1 Screenshot</h3>
