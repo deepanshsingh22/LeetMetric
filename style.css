@@ -38,6 +38,7 @@ h1{
 
 .user-input-container{
     display: flex;
+    gap: 10px;
     justify-content: space-between;
 }
 
@@ -101,4 +102,67 @@ h4{
     border-radius: 10px;
     font-size: 1rem;
     min-height: 4rem;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 80%; /* Take up more width on smaller screens */
+        padding: 15px; /* Less padding on small screens */
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Smaller header text */
+    }
+
+    .circle {
+        width: 100px;
+        height: 100px; /* Smaller circle */
+        font-size: 0.9rem;
+    }
+
+    .user-input-container {
+        flex-direction: column; /* Stack input and button vertically */
+        gap: 10px;
+    }
+
+    #user-input {
+        width: 100%; /* Full width input */
+    }
+
+    .stats-cards {
+        flex-direction: column;
+        gap: 15px;
+        justify-content: center; /* Center align cards */
+    }
+
+    .card {
+        width: 80%; /* Cards take more width on smaller screens */
+        max-width: none; /* Remove max-width to allow for flexibility */
+    }
+
+    .progress {
+        flex-direction: column; /* Stack progress indicators vertically */
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 90%; /* Even more width for very small screens */
+    }
+
+    h1 {
+        font-size: 1.2rem; /* Further reduce font size */
+    }
+
+    .circle {
+        width: 80px;
+        height: 80px; /* Even smaller circle */
+        font-size: 0.8rem;
+    }
+
+    .card {
+        width: 100%; /* Cards take full width on very small screens */
+    }
 }
